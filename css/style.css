@@ -7,4 +7,132 @@ body
     margin: 0;
 }
 
+.container
+{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px)
+{
+    .container
+    {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .container
+    {
+        max-width: 960px;
+    }    
+}
+
+@media (min-width: 1200px) 
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+}
+
+.country h1
+{
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin: 45px;
+}
+
+.tours-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tour
+{
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 20px;
+}
+
+.tour title
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tour-picture
+{
+    width: 380px;
+    position: relative;
+}
+
+.tour-picture img
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.tour-picture .tour-price
+{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FFD241;
+    padding: 14px 26px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.tour-country
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #C5B223;
+    margin: 10px 0;
+}
+
+.tour-road
+{
+    color: #8C8C8C;
+    margin-bottom: 15px;
+}
+
+.tour-date, .tour-details, .tour-road
+{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tour-date
+{
+    margin-bottom: 15px;
+}
+
+.tag
+{
+    padding: 3px 18px 3px 12px;
+    background: #CB0037;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-right: 5px;
+    
+}
+
 
