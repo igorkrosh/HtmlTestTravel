@@ -1,0 +1,78 @@
+.navbar
+{
+    height: 70px;
+    width: 100vw;
+    background: #FFD241;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#btn-open-menu
+{
+    height: 23px;
+    width: 30px;
+    margin-right: 25px;
+    padding: 0;
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn-open-menu.active .rectangle 
+{
+    opacity: 0;
+}
+
+#btn-open-menu.active
+{
+    height: 30px;
+}
+
+#btn-open-menu.active:after, #btn-open-menu.active:before
+{
+    top: 50%;
+    left: 50%;
+}
+
+#btn-open-menu.active:after
+{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#btn-open-menu.active:before
+{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#btn-open-menu:focus
+{
+    outline: none;
+}
+
+#btn-open-menu .rectangle, #btn-open-menu:after, #btn-open-menu:before
+{
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#btn-open-menu:after, #btn-open-menu:before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+#btn-open-menu:after
+{
+    top: 0;
+}
+
+#btn-open-menu:before
+{
+    bottom: 0;
+}

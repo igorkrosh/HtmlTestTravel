@@ -1,0 +1,10 @@
+@import "fonts.css";
+@import "import/navbar.css";
+
+body
+{
+    font-family: "MuseoSansCyrl";
+    margin: 0;
+}
+
+
