@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "import/navbar.css";
+@import "import/forms.css";
 
 body
 {
@@ -14,6 +15,17 @@ body
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col
+{
+    width: 50%;
 }
 
 @media (min-width: 576px)
@@ -40,7 +52,7 @@ body
     }
 }
 
-.country h1
+section h1
 {
     font-size: 36px;
     line-height: 43px;
@@ -133,6 +145,22 @@ body
     font-weight: 500;
     margin-right: 5px;
     
+}
+
+.sub-title
+{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000000;
+    text-transform: uppercase;
+}
+
+.sub-section
+{
+    margin-bottom: 35px;
 }
 
 
