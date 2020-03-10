@@ -65,6 +65,11 @@ section h1
     margin: 45px;
 }
 
+.request
+{
+    margin-bottom: 160px;
+}
+
 .tours-wrapper
 {
     display: flex;
@@ -166,4 +171,86 @@ section h1
     margin-bottom: 35px;
 }
 
+.agreement-wrapper
+{
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    position: relative;
+    
+}
+
+.agreement-text
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.agreement-title
+{
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.agreement-details
+{
+    font-size: 14px;
+    color: #C1C1C1;
+}
+
+.agreement-wrapper .custom-checkbox
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.required
+{
+    color: #AE1010;
+    margin-right: 5px;
+}
+
+.btn-send
+{
+    width: 280px;
+    height: 50px;
+    background-color: #FFD241;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 500;
+    font-family: "MuseoSansCyrl";
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-send:after
+{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: 30px;
+    top: 42%;
+}
+
+.btn-send:focus
+{
+    outline: none;    
+}
+
+.btn-send:hover
+{
+    background-color: #ffc919;  
+}
 
