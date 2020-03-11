@@ -2,22 +2,24 @@
 {
     height: 70px;
     background: #FFD241;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: relative;
 }
+
+
 
 #btn-open-menu
 {
+    top:23px;    
+    right: 23px;
     height: 23px;
-    width: 30px;
-    margin-right: 25px;
+    width: 30px;    
     padding: 0;
     background: none;
     border: none;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 10;
 }
 
 #btn-open-menu.active .rectangle 
@@ -34,6 +36,7 @@
 {
     top: 50%;
     left: 50%;
+    background-color: #ffffff;
 }
 
 #btn-open-menu.active:after
@@ -75,3 +78,184 @@
 {
     bottom: 0;
 }
+
+.fade
+{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.3)
+}
+
+#sidebar
+{
+    display: block;
+    width: 530px;
+    height: 100vh;
+    top: 0;
+    right: -530px;
+    position: fixed;
+    background: #FFD241;
+    z-index: 7;
+    transition: ease-in 0.3s;
+    padding: 100px 130px 55px 120px;
+    box-sizing: border-box;
+}
+
+#sidebar.active
+{
+    right: 0px;
+}
+
+#sidebar .btn-filter:focus
+{
+    outline: none;
+}
+
+#sidebar .btn-filter
+{
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    height: 50px;
+    border-radius: 30px;
+    
+    font-family: "MuseoSansCyrl";
+
+    background-color: #ffffff;    
+    
+    cursor: pointer;
+    display: block;
+
+    transition: 0.5s;
+}
+
+#sidebar .btn-title
+{
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 30px;
+    position: relative;
+}
+
+#sidebar .btn-title:after
+{
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 39%;
+    width: 6px;
+    height: 6px;
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+
+#sidebar .filter-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sidebar .btn-filter:nth-child(1)
+{
+    width: 150px;
+    margin-right: 10px;
+    
+}
+
+#sidebar .btn-filter:nth-child(2)
+{
+    width: 120px;
+}
+
+#sidebar .btn-filter:nth-child(3)
+{
+    width: 100%;
+}
+
+#sidebar .filter
+{
+    display: none;
+}
+
+#sidebar .btn-filter.active
+{
+    width: 100%;
+    height: auto;
+}
+
+#sidebar .btn-filter.active .filter
+{
+    display: block;
+}
+
+.filter ul
+{
+    list-style-type: none;
+}
+
+.continent-list .continent
+{
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    padding: 7px 13px;
+    border-radius: 15px;
+}
+
+.continent-list .continent:hover
+{
+    background-color: rgba(196, 196, 196, 0.3);
+    color: #252525;
+}
+
+.continent-list
+{
+    padding: 0 17px;
+    margin-top: 0;
+}
+
+.continent-list .collapse ul
+{
+    
+    padding-left: 13px;
+}
+
+.continent-list .collapse ul a
+{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 7px 13px;
+    margin: 3px 0;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.continent-list .collapse ul a:hover
+{
+    background-color: rgba(196, 196, 196, 0.3);
+    color: #252525;
+}
+
+.continent-list .collapse ul .all-tours
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FFD241;
+    font-weight: 400;
+}
+
+.continent-list .collapse ul .all-tours:hover
+{
+    color: rgb(233, 186, 32);
+}
+
+
+

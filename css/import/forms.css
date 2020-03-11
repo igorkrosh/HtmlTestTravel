@@ -118,3 +118,13 @@
     height: 6px;
     border-width: 0 3px 3px 0;
 }
+
+.collapse
+{
+    display: none;
+}
+
+.collapse-toggle.active ~ .collapse
+{
+    display: block;
+}
